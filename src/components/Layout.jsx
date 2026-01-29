@@ -1,16 +1,13 @@
+// src/components/Layout.jsx
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Layout({ children }) {
+export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   );
 }
-
-export default Layout;

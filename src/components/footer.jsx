@@ -1,9 +1,8 @@
-function Footer() {
+// src/components/Footer.jsx
+export default function Footer() {
   return (
     <footer>
-      <p>© Kasa 2026</p>
+      <p>© 2026 Kasa. Tous droits réservés.</p>
     </footer>
   );
 }
-
-export default Footer;

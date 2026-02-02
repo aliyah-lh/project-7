@@ -1,16 +1,15 @@
-import Banner from '../components/Banner'
-import Card from '../components/Card'
-import logements from '../data/logements.json'  
-import './Home.scss'
+import Banner from "../components/Banner";
+import Card from "../components/Card";
+import logements from "../data/logements.json";
+import "../styles/home.scss";
 
 export default function Home() {
   return (
     <main>
       <Banner />
-
       <section className="home__cards">
         {logements.map((logement) => (
-          <Card 
+          <Card
             key={logement.id}
             id={logement.id}
             title={logement.title}
@@ -19,5 +18,5 @@ export default function Home() {
         ))}
       </section>
     </main>
-  )
+  );
 }

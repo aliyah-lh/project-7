@@ -1,15 +1,22 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
+import "../styles/header.scss"; // Header
+import "../styles/footer.scss"; // Footer
 
-export default function Layout({ children }) {
+export default function Layout() {
   return (
     <>
-      <Header />
+      <header>
+        <h1>Kasa</h1>
+        {/* Ici tu peux mettre les liens navigation si tu veux */}
+      </header>
+
       <main>
-        {children}
+        <Outlet /> {/* C’est ici que les pages (Home, About…) vont s’afficher */}
       </main>
-      <Footer />
+
+      <footer>
+        <p>© 2026 Kasa. Tous droits réservés.</p>
+      </footer>
     </>
   );
 }
-

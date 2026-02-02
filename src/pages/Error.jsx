@@ -1,7 +1,6 @@
-import React from "react";
 
-const Error = () => {
-  return <h1>404 - Page non trouvée</h1>;
-};
+import "../styles/error.scss";
 
-export default Error;
+export default function Error() {
+  return <h1>Page 404</h1>;
+}

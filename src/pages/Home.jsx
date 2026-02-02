@@ -1,7 +1,23 @@
-import React from "react";
+import Banner from '../components/Banner'
+import Card from '../components/Card'
+import logements from '../data/logements.json'  
+import './Home.scss'
 
-const Home = () => {
-  return <h1>Accueil</h1>;
-};
+export default function Home() {
+  return (
+    <main>
+      <Banner />
 
-export default Home;
+      <section className="home__cards">
+        {logements.map((logement) => (
+          <Card 
+            key={logement.id}
+            id={logement.id}
+            title={logement.title}
+            cover={logement.cover}
+          />
+        ))}
+      </section>
+    </main>
+  )
+}

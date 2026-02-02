@@ -1,11 +1,10 @@
-// src/main.jsx
-import React from "react";
-import ReactDOM from "react-dom/client";
-import Router from "./router";
-import "./styles/main.scss"; // ton SASS principal
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.scss'  
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router />
+    <App />
   </React.StrictMode>
-);
+)

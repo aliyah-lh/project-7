@@ -1,4 +1,5 @@
-import "../styles/logement.scss"; 
+import "../styles/logement.scss";
+
 
 export default function Logement() {
   return (

@@ -6,6 +6,7 @@ import Logement from "./pages/Logement";
 import Error from "./pages/Error";
 import "./styles/app.scss";
 
+
 function App() {
   return (
     <BrowserRouter>

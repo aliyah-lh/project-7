@@ -3,6 +3,7 @@ import "../styles/card.scss";
 
 
 
+
 export default function Card({ id, title, cover }) {
   return (
     <Link to={`/logement/${id}`} className="card">

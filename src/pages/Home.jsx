@@ -4,6 +4,7 @@ import logements from "../data/logements.json";
 import "../styles/home.scss";
 
 
+
 export default function Home() {
   return (
     <main>

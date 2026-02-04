@@ -1,6 +1,5 @@
 import "../styles/logement.scss";
 
-
 export default function Logement() {
   return (
     <main>
@@ -8,3 +7,4 @@ export default function Logement() {
     </main>
   );
 }
+

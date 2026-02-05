@@ -1,0 +1,151 @@
+
+.Fiche-container {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+.Fiche-logement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.description-info {
+  display: flex;
+  flex-direction: column;
+
+  &__titletags {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      .titre-logement {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .endroit-logement {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 10px;
+    }
+  }
+
+  &__proprietaire {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    &__nom-prop {
+      display: flex;
+      align-items: center;
+
+      .nom-proprietaire {
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 10px;
+        text-align: right;
+        width: 93px;
+      }
+
+      .photo-proprietaire {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    &__rate {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+
+      .etoile {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+/* Section description détaillée et équipements */
+.description-centent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__description,
+  &__equipement {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .description-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .description-info__titletags {
+    margin-bottom: 30px;
+
+    &__title {
+      .titre-logement {
+        font-size: 36px;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .endroit-logement {
+        font-size: 18px;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  .description-info__proprietaire {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description-centent {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__description {
+      width: 50%;
+      padding-right: 40px;
+    }
+
+    &__equipement {
+      width: 50%;
+      padding-left: 40px;
+    }
+  }
+
+  .description-info__proprietaire__rate .etoile {
+    width: 30px;
+    height: 30px;
+  }
+}

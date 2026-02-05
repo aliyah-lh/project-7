@@ -3,27 +3,193 @@
     "id": "1",
     "title": "Appartement cosy",
     "cover": "https://via.placeholder.com/300x200.png?text=Appartement+1",
-    "location": "Paris",
-    "tags": ["WiFi", "Cuisine"],
-    "description": "Un appartement confortable au centre de Paris.",
-    "equipments": ["Lave-vaisselle", "Machine à laver", "Sèche-cheveux"],
     "pictures": [
       "https://via.placeholder.com/300x200.png?text=Photo+1",
-      "https://via.placeholder.com/300x200.png?text=Photo+2"
-    ]
+      "https://via.placeholder.com/300x200.png?text=Photo+2",
+      "https://via.placeholder.com/300x200.png?text=Photo+3",
+      "https://via.placeholder.com/300x200.png?text=Photo+4"
+    ],
+    "description": "Un appartement confortable au centre de Paris.",
+    "host": {
+      "name": "Alice Martin",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "5",
+    "location": "Ile de France - Paris",
+    "equipments": ["Lave-vaisselle", "Machine à laver", "Sèche-cheveux", "WiFi", "Cuisine équipée"],
+    "tags": ["WiFi", "Cuisine", "Centre-ville"]
   },
   {
     "id": "2",
     "title": "Maison moderne",
     "cover": "https://via.placeholder.com/300x200.png?text=Maison+2",
-    "location": "Lyon",
-    "tags": ["Parking", "Balcon"],
+    "pictures": [
+      "https://via.placeholder.com/300x200.png?text=Photo+1",
+      "https://via.placeholder.com/300x200.png?text=Photo+2",
+      "https://via.placeholder.com/300x200.png?text=Photo+3",
+      "https://via.placeholder.com/300x200.png?text=Photo+4"
+    ],
     "description": "Maison lumineuse avec jardin et parking.",
-    "equipments": ["WiFi", "TV", "Cuisine équipée"],
+    "host": {
+      "name": "Bob Durand",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "4",
+    "location": "Auvergne-Rhône-Alpes - Lyon",
+    "equipments": ["WiFi", "TV", "Cuisine équipée", "Parking", "Balcon"],
+    "tags": ["Parking", "Balcon", "Jardin"]
+  },
+  {
+    "id": "3",
+    "title": "Studio charmant",
+    "cover": "https://via.placeholder.com/300x200.png?text=Studio+3",
     "pictures": [
       "https://via.placeholder.com/300x200.png?text=Photo+1",
       "https://via.placeholder.com/300x200.png?text=Photo+2",
       "https://via.placeholder.com/300x200.png?text=Photo+3"
-    ]
+    ],
+    "description": "Petit studio cosy proche des transports et commerces.",
+    "host": {
+      "name": "Caroline Petit",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "3",
+    "location": "Ile de France - Paris 12e",
+    "equipments": ["WiFi", "Four", "Micro-ondes", "Frigo"],
+    "tags": ["Studio", "Transport", "Commerces"]
+  },
+  {
+    "id": "4",
+    "title": "Appartement lumineux",
+    "cover": "https://via.placeholder.com/300x200.png?text=Appartement+4",
+    "pictures": [
+      "https://via.placeholder.com/300x200.png?text=Photo+1",
+      "https://via.placeholder.com/300x200.png?text=Photo+2",
+      "https://via.placeholder.com/300x200.png?text=Photo+3"
+    ],
+    "description": "Appartement lumineux avec balcon et vue dégagée.",
+    "host": {
+      "name": "David Leroy",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "4",
+    "location": "Ile de France - Paris 15e",
+    "equipments": ["WiFi", "Balcon", "TV", "Cuisine équipée"],
+    "tags": ["Balcon", "Vue", "Centre-ville"]
+  },
+  {
+    "id": "5",
+    "title": "Maison familiale",
+    "cover": "https://via.placeholder.com/300x200.png?text=Maison+5",
+    "pictures": [
+      "https://via.placeholder.com/300x200.png?text=Photo+1",
+      "https://via.placeholder.com/300x200.png?text=Photo+2",
+      "https://via.placeholder.com/300x200.png?text=Photo+3",
+      "https://via.placeholder.com/300x200.png?text=Photo+4"
+    ],
+    "description": "Maison spacieuse idéale pour les familles.",
+    "host": {
+      "name": "Emma Dupont",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "5",
+    "location": "Provence-Alpes-Côte d'Azur - Marseille",
+    "equipments": ["WiFi", "TV", "Cuisine équipée", "Jardin", "Parking"],
+    "tags": ["Famille", "Jardin", "Parking"]
+  },
+  {
+    "id": "6",
+    "title": "Loft moderne",
+    "cover": "https://via.placeholder.com/300x200.png?text=Loft+6",
+    "pictures": [
+      "https://via.placeholder.com/300x200.png?text=Photo+1",
+      "https://via.placeholder.com/300x200.png?text=Photo+2",
+      "https://via.placeholder.com/300x200.png?text=Photo+3",
+      "https://via.placeholder.com/300x200.png?text=Photo+4"
+    ],
+    "description": "Loft moderne avec décoration design et équipement complet.",
+    "host": {
+      "name": "Franck Morel",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "4",
+    "location": "Ile de France - Paris 9e",
+    "equipments": ["WiFi", "Cuisine équipée", "TV", "Climatisation"],
+    "tags": ["Loft", "Design", "Centre-ville"]
+  },
+  {
+    "id": "7",
+    "title": "Studio artistique",
+    "cover": "https://via.placeholder.com/300x200.png?text=Studio+7",
+    "pictures": [
+      "https://via.placeholder.com/300x200.png?text=Photo+1",
+      "https://via.placeholder.com/300x200.png?text=Photo+2"
+    ],
+    "description": "Studio artistique décoré avec goût, proche du centre.",
+    "host": {
+      "name": "Isabelle Martin",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "5",
+    "location": "Ile de France - Paris 18e",
+    "equipments": ["WiFi", "Cuisine équipée", "TV", "Frigo"],
+    "tags": ["Studio", "Art", "Montmartre"]
+  },
+  {
+    "id": "8",
+    "title": "Appartement design",
+    "cover": "https://via.placeholder.com/300x200.png?text=Appartement+8",
+    "pictures": [
+      "https://via.placeholder.com/300x200.png?text=Photo+1",
+      "https://via.placeholder.com/300x200.png?text=Photo+2",
+      "https://via.placeholder.com/300x200.png?text=Photo+3"
+    ],
+    "description": "Appartement design avec balcon et équipements modernes.",
+    "host": {
+      "name": "Julien Lefevre",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "4",
+    "location": "Ile de France - Paris 11e",
+    "equipments": ["WiFi", "Balcon", "Cuisine équipée", "TV"],
+    "tags": ["Design", "Balcon", "Centre-ville"]
+  },
+  {
+    "id": "9",
+    "title": "Maison de charme",
+    "cover": "https://via.placeholder.com/300x200.png?text=Maison+9",
+    "pictures": [
+      "https://via.placeholder.com/300x200.png?text=Photo+1",
+      "https://via.placeholder.com/300x200.png?text=Photo+2",
+      "https://via.placeholder.com/300x200.png?text=Photo+3",
+      "https://via.placeholder.com/300x200.png?text=Photo+4"
+    ],
+    "description": "Maison de charme avec jardin et décoration élégante.",
+    "host": {
+      "name": "Laura Petit",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "5",
+    "location": "Nouvelle-Aquitaine - Bordeaux",
+    "equipments": ["WiFi", "Jardin", "Cuisine équipée", "TV", "Parking"],
+    "tags": ["Charme", "Jardin", "Parking"]
+  },
+  {
+    "id": "10",
+    "title": "Studio confortable",
+    "cover": "https://via.placeholder.com/300x200.png?text=Studio+10",
+    "pictures": [
+      "https://via.placeholder.com/300x200.png?text=Photo+1",
+      "https://via.placeholder.com/300x200.png?text=Photo+2"
+    ],
+    "description": "Studio confortable proche des transports et commerces.",
+    "host": {
+      "name": "Nicolas Dubois",
+      "picture": "https://via.placeholder.com/64"
+    },
+    "rating": "3",
+    "location": "Ile de France - Paris 13e",
+    "equipments": ["WiFi", "Cuisine équipée", "TV", "Frigo"],
+    "tags": ["Studio", "Transport", "Commerces"]
   }
 ]

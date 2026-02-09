@@ -1,41 +1,32 @@
-import { useState } from "react";
+import { useRef } from "react";
+import useAccordion from "../../hooks/useAccordion";
 import "../styles/collapse.scss";
 
 export default function Collapse({ title, content }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const detailsRef = useRef(null);
+  const summaryRef = useRef(null);
+  const contentRef = useRef(null);
 
-  const display = () => {
-    setIsOpen(!isOpen);
-  };
+  useAccordion(detailsRef, summaryRef, contentRef);
 
   return (
-    <div className="collapse__dropdown__container">
-      <div className="collapse__dropdown__title" onClick={display}>
+    <details ref={detailsRef} className="collapse">
+      <summary ref={summaryRef} className="collapse__title">
         <h2>{title}</h2>
+        <i className="fa-solid fa-chevron-down collapse__icon"></i>
+      </summary>
 
-        <p>
-          {isOpen ? (
-            <i className="fa-solid fa-chevron-up"></i>
-          ) : (
-            <i className="fa-solid fa-chevron-down"></i>
-          )}
-        </p>
+      <div ref={contentRef} className="collapse__content">
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{content}</p>
+        )}
       </div>
-
-      {isOpen && (
-        <div className="collapse__dropdown__content">
-          {Array.isArray(content) ? (
-            <ul>
-              {content.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          ) : (
-            <p>{content}</p>
-          )}
-        </div>
-      )}
-    </div>
+    </details>
   );
 }
-

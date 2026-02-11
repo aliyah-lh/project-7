@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/collapse.scss";
+import { FaChevronDown } from "react-icons/fa6";
 
 export default function Collapse({ title, content, className = "" }) {
   const [open, setOpen] = useState(false);
@@ -12,13 +13,14 @@ export default function Collapse({ title, content, className = "" }) {
     <div className={`collapse ${className}`}>
       <button className="collapse__title-container" onClick={toggle}>
         <h2 className="collapse__title-container__title">{title}</h2>
-        <i
+
+        <FaChevronDown
           className={
             !open
-              ? "fa-solid fa-chevron-down expand_icon"
-              : "fa-solid fa-chevron-down expand_icon expand_icon--opened"
+              ? "expand_icon"
+              : "expand_icon expand_icon--opened"
           }
-        ></i>
+        />
       </button>
 
       {open && (

@@ -9,10 +9,9 @@ export default function Collapse({ title, content, className = "" }) {
   };
 
   return (
-    <div className={className}>
+    <div className={`collapse ${className}`}>
       <button className="collapse__title-container" onClick={toggle}>
         <h2 className="collapse__title-container__title">{title}</h2>
-
         <i
           className={
             !open

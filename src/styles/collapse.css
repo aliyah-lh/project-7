@@ -1,47 +1,69 @@
+@charset "UTF-8";
 .collapse {
   width: 100%;
-  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
-.collapse__header {
+
+
+.collapse__title-container {
+  width: 100%;
+  height: 47px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8em 1em;
-  background-color: #ff6060;
-  border-radius: 5px;
+  background: #ff6060;
+  border: none;
+  padding: 10px 12px;
   cursor: pointer;
+  transition: background 0.2s ease-in-out;
 }
-.collapse__header h3 {
+
+.collapse__title-container:hover {
+  background: #ff7a7a;
+}
+
+
+.collapse__title-container__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
   color: white;
-  font-size: 18px;
-  font-weight: 500;
+}
+
+
+.collapse__text {
+  background: #f6f6f6;
+  padding: 12px;
+  font-size: 14px;
+  color: black;
+  line-height: 1.4;
+}
+
+/* Si c’est un <p> */
+.collapse__text p {
   margin: 0;
 }
-.collapse__header .collapse__icon {
-  color: white;
+
+/* Si c’est une liste */
+.collapse__text ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.collapse__text li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+
+.expand_icon {
   font-size: 18px;
+  color: white;
+  transition: transform 0.25s ease;
 }
-@media screen and (min-width: 1024px) {
-  .collapse__header h3 {
-    font-size: 24px;
-  }
-  .collapse__header .collapse__icon {
-    font-size: 24px;
-  }
-}
-.collapse__content {
-  background-color: #f6f6f6;
-  border-radius: 5px;
-  margin-top: 5px;
-  padding: 0.8em 1em;
-}
-.collapse__content p {
-  font-size: 16px;
-  color: #000;
-  margin: 0.4em 0;
-}
-@media screen and (min-width: 1024px) {
-  .collapse__content p {
-    font-size: 20px;
-  }
+
+.expand_icon--opened {
+  transform: rotate(180deg);
 }

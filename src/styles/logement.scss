@@ -20,6 +20,11 @@
   }
 }
 
+.rental-title {
+  display: flex;
+  flex-direction: column;
+}
+
 .rental-info__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -43,7 +48,6 @@
     font-size: 14px;
   }
 }
-
 
 .rental-tags {
   display: flex;
@@ -74,18 +78,42 @@
   }
 }
 
-
 .renter-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; 
-  gap: 5px;
+  align-items: flex-end;
+  gap: 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .renter-info__top {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
+
+  @media screen and (max-width: 768px) {
+    order: 2;
+  }
+}
+
+.renter-info__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+  width: 93px;
+  text-align: right;
+  margin: 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .renter-info__pic {
@@ -100,26 +128,21 @@
   }
 }
 
-.renter-info__name {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #ff6060;
-  margin: 0;
-
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-}
-
-
 .renter-info__rating {
   display: flex;
   gap: 5px;
+
+  @media screen and (max-width: 768px) {
+    order: 1;
+  }
 }
 
 .star {
   font-size: 20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .star--filled {
@@ -129,13 +152,6 @@
 .star--empty {
   color: #e3e3e3;
 }
-
-@media screen and (max-width: 768px) {
-  .star {
-    font-size: 14px;
-  }
-}
-
 
 .rental-collapse-container {
   display: flex;

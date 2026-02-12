@@ -20,11 +20,11 @@ export default function Logement() {
       <Carousel slides={rental.pictures} />
 
       <div className="rental-info-container">
+       
         <div className="rental-title">
           <h1 className="rental-info__title">{rental.title}</h1>
           <p className="rental-info__location">{rental.location}</p>
 
-          
           <div className="rental-tags">
             {rental.tags.map((tag, index) => (
               <span key={index} className="rental-tags__tag">
@@ -34,13 +34,17 @@ export default function Logement() {
           </div>
         </div>
 
+        
         <div className="renter-info">
-          <p className="renter-info__name">{rental.host.name}</p>
-          <img
-            className="renter-info__pic"
-            src={rental.host.picture}
-            alt={rental.host.name}
-          />
+          
+          <div className="renter-info__top">
+            <p className="renter-info__name">{rental.host.name}</p>
+            <img
+              className="renter-info__pic"
+              src={rental.host.picture}
+              alt={rental.host.name}
+            />
+          </div>
 
           
           <div className="renter-info__rating">

@@ -5,7 +5,6 @@
   margin-bottom: 20px;
 }
 
-/* BOUTON TITRE */
 .collapse__title-container {
   width: 100%;
   height: 47px;
@@ -27,7 +26,6 @@
   background: #ff7a7a;
 }
 
-/* TITRE */
 .collapse__title-container__title {
   margin: 0;
   font-size: 14px;
@@ -35,7 +33,6 @@
   color: white;
 }
 
-/* CONTENU */
 .collapse__text {
   background: #f6f6f6;
   padding: 12px;
@@ -44,12 +41,10 @@
   line-height: 1.4;
 }
 
-/* Si c’est un <p> */
 .collapse__text p {
   margin: 0;
 }
 
-/* Si c’est une liste */
 .collapse__text ul {
   margin: 0;
   padding-left: 18px;
@@ -60,14 +55,13 @@
   margin-bottom: 6px;
 }
 
-/* ICONE */
+
 .expand_icon {
   font-size: 18px;
   color: white;
   transition: transform 0.25s ease;
 }
 
-/* Quand c’est ouvert : la flèche tourne */
 .expand_icon--opened {
   transform: rotate(180deg);
 }

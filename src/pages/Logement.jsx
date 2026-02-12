@@ -24,7 +24,7 @@ export default function Logement() {
           <h1 className="rental-info__title">{rental.title}</h1>
           <p className="rental-info__location">{rental.location}</p>
 
-          {/* ✅ Tags sous la ville */}
+          
           <div className="rental-tags">
             {rental.tags.map((tag, index) => (
               <span key={index} className="rental-tags__tag">
@@ -42,7 +42,7 @@ export default function Logement() {
             alt={rental.host.name}
           />
 
-          {/* ⭐ Étoiles sous la photo */}
+          
           <div className="renter-info__rating">
             {[1, 2, 3, 4, 5].map((star) => (
               <span

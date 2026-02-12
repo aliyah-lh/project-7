@@ -8,7 +8,6 @@
   }
 }
 
-/* Bloc infos (titre + location + tags + propriétaire) */
 .rental-info-container {
   display: flex;
   justify-content: space-between;
@@ -21,7 +20,6 @@
   }
 }
 
-/* Titre */
 .rental-info__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -34,7 +32,6 @@
   }
 }
 
-/* Ville */
 .rental-info__location {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -47,7 +44,7 @@
   }
 }
 
-/* Tags (boutons sous la ville) */
+
 .rental-tags {
   display: flex;
   flex-wrap: wrap;
@@ -77,18 +74,18 @@
   }
 }
 
-/* Propriétaire + étoiles */
+
 .renter-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Alignement à droite du container */
+  align-items: flex-end; 
   gap: 5px;
 }
 
 .renter-info__top {
   display: flex;
   align-items: center;
-  gap: 10px; /* ✅ 10px entre image et nom */
+  gap: 10px; 
 }
 
 .renter-info__pic {
@@ -115,7 +112,7 @@
   }
 }
 
-/* ⭐ Étoiles sous le nom, alignées avec le nom */
+
 .renter-info__rating {
   display: flex;
   gap: 5px;
@@ -139,7 +136,7 @@
   }
 }
 
-/* Collapse */
+
 .rental-collapse-container {
   display: flex;
   gap: 75px;

@@ -1,151 +1,152 @@
+.rental-page {
+  padding-left: 100px;
+  padding-right: 100px;
 
-.Fiche-container {
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-
-.Fiche-logement {
+/* Bloc infos (titre + location + tags + propriétaire) */
+.rental-info-container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 25px;
 
-
-.description-info {
-  display: flex;
-  flex-direction: column;
-
-  &__titletags {
-    display: flex;
+  @media screen and (max-width: 768px) {
     flex-direction: column;
-
-    &__title {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 15px;
-
-      .titre-logement {
-        font-size: 18px;
-        font-weight: 500;
-      }
-
-      .endroit-logement {
-        font-size: 14px;
-        font-weight: 500;
-      }
-    }
-
-    &__tags {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 10px;
-    }
-  }
-
-  &__proprietaire {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-
-    &__nom-prop {
-      display: flex;
-      align-items: center;
-
-      .nom-proprietaire {
-        font-size: 18px;
-        font-weight: 500;
-        margin-right: 10px;
-        text-align: right;
-        width: 93px;
-      }
-
-      .photo-proprietaire {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-    }
-
-    &__rate {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 20px;
-
-      .etoile {
-        width: 15px;
-        height: 15px;
-        margin-left: 5px;
-      }
-    }
+    gap: 15px;
   }
 }
 
-/* Section description détaillée et équipements */
-.description-centent {
+/* Titre */
+.rental-info__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff6060;
+  margin: 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+/* Ville */
+.rental-info__location {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  margin: 5px 0 0 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+/* Tags (boutons sous la ville) */
+.rental-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.rental-tags__tag {
+  background-color: #ff6060;
+  color: white;
+  height: 25px;
+  min-width: 115px;
+  padding: 0 15px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+  @media screen and (max-width: 768px) {
+    min-width: 84px;
+    font-size: 10px;
+  }
+}
+
+/* Propriétaire + étoiles */
+.renter-info {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: flex-end; /* Alignement à droite du container */
+  gap: 5px;
+}
 
-  &__description,
-  &__equipement {
-    margin-bottom: 20px;
+.renter-info__top {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* ✅ 10px entre image et nom */
+}
+
+.renter-info__pic {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  @media screen and (max-width: 768px) {
+    width: 32px;
+    height: 32px;
   }
 }
 
+.renter-info__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+  margin: 0;
 
-@media screen and (min-width: 1024px) {
-  .description-info {
-    flex-direction: row;
-    justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
   }
+}
 
-  .description-info__titletags {
-    margin-bottom: 30px;
+/* ⭐ Étoiles sous le nom, alignées avec le nom */
+.renter-info__rating {
+  display: flex;
+  gap: 5px;
+}
 
-    &__title {
-      .titre-logement {
-        font-size: 36px;
-        display: flex;
-        align-items: flex-end;
-      }
+.star {
+  font-size: 20px;
+}
 
-      .endroit-logement {
-        font-size: 18px;
-        display: flex;
-        align-items: flex-end;
-      }
-    }
+.star--filled {
+  color: #ff6060;
+}
+
+.star--empty {
+  color: #e3e3e3;
+}
+
+@media screen and (max-width: 768px) {
+  .star {
+    font-size: 14px;
   }
+}
 
-  .description-info__proprietaire {
+/* Collapse */
+.rental-collapse-container {
+  display: flex;
+  gap: 75px;
+  margin-top: 25px;
+
+  @media screen and (max-width: 768px) {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .description-centent {
-    flex-direction: row;
-    justify-content: space-between;
-
-    &__description {
-      width: 50%;
-      padding-right: 40px;
-    }
-
-    &__equipement {
-      width: 50%;
-      padding-left: 40px;
-    }
-  }
-
-  .description-info__proprietaire__rate .etoile {
-    width: 30px;
-    height: 30px;
+    gap: 20px;
   }
 }

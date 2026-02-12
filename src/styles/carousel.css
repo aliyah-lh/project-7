@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .carousel {
   position: relative;
   display: flex;
@@ -43,18 +44,27 @@
 }
 .carousel__commands {
   position: absolute;
-  width: 100%;
+  width: 97%;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  align-items: center;
+  padding: 0 20px;
+  /* ✅ MOBILE : padding supprimé + width 100% */
+}
+@media screen and (max-width: 768px) {
+  .carousel__commands {
+    width: 100%;
+    padding: 0;
+  }
 }
 .carousel__commands__photocount {
   position: absolute;
   color: white;
   font-size: 18px;
   bottom: 2%;
-  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0;
 }
 @media screen and (max-width: 768px) {
@@ -71,12 +81,25 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.carousel__commands__buttons img.arrow {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s;
+.carousel__commands__buttons .arrow-icon {
+  color: white;
+  width: 46.68px;
+  height: 79.2px;
+  opacity: 1;
 }
-.carousel__commands__buttons img.arrow.arrow--backward {
-  transform: rotate(180deg);
+@media screen and (max-width: 768px) {
+  .carousel__commands__buttons .arrow-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .carousel__commands__buttons .arrow-icon {
+    width: 35px;
+    height: 60px;
+  }
 }

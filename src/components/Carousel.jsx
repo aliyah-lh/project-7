@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/carousel.scss";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 
 export default function Carousel({ slides }) {
   const pics = slides;
@@ -38,7 +38,7 @@ export default function Carousel({ slides }) {
             className="carousel__commands__buttons"
             onClick={previousSlide}
           >
-            <FaArrowLeft className="arrow-icon" />
+            <FaAngleLeft className="arrow-icon" />
           </button>
 
           <p className="carousel__commands__photocount">
@@ -46,7 +46,7 @@ export default function Carousel({ slides }) {
           </p>
 
           <button className="carousel__commands__buttons" onClick={nextSlide}>
-            <FaArrowRight className="arrow-icon" />
+            <FaAngleRight className="arrow-icon" />
           </button>
         </div>
       )}

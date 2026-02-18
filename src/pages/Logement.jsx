@@ -12,12 +12,12 @@ export default function Logement() {
   const rental = rentalList.find((rental) => rental.id === id);
 
   if (!rental) {
-    return <Error />;
+    return <Error />; 
   }
 
   return (
     <main className="rental-page">
-      <Carousel slides={rental.pictures} />
+      <Carousel pictures={rental.pictures} />
 
       <div className="rental-info-container">
        
@@ -26,7 +26,7 @@ export default function Logement() {
           <p className="rental-info__location">{rental.location}</p>
 
           <div className="rental-tags">
-            {rental.tags.map((tag, index) => (
+            {rental.tags.map((tag, index) => ( 
               <span key={index} className="rental-tags__tag">
                 {tag}
               </span>

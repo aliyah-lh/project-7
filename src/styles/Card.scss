@@ -47,14 +47,19 @@
   }
 
   &__title {
-    position: absolute;
-    bottom: 0;
-    margin: 15px 20px;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    box-sizing: border-box;
-  }
+  position: absolute;
+  bottom: 0;
+  margin: 15px 20px;
+  color: white;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 0;
+
+  box-sizing: border-box;
+}
 
   &:hover {
     .card__img {

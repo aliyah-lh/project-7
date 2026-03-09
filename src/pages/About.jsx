@@ -1,4 +1,4 @@
-import "../styles/about.scss";
+
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 import aboutBanner from '../assets/bannermontagne.svg'

@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Logement from "./pages/Logement";
 import Error from "./pages/Error";
-import "./styles/app.scss";
+
 import Header from "./components/Header"; 
 import Footer from "./components/Footer";
 
